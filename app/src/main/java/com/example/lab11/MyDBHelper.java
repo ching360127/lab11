@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
+
 
 public class MyDBHelper extends SQLiteOpenHelper {
     private static final String name ="mdatabase.db";
@@ -15,7 +15,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE myTable(booktext PRIMARY KEY,price integer NOT NULL)");
+        db.execSQL("CREATE TABLE myTable(book text PRIMARY KEY,price integer NOT NULL)");
 
     }
 
